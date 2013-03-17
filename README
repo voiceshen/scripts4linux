@@ -1,3 +1,9 @@
+
+Index
+  - build linux scripts
+  - generate ubifs scripts
+
+---------- Build Linux Scritps ----------
 This is a summary of the build_linux.sh
 
 Function
@@ -12,3 +18,12 @@ Usage
   - ./build_linux.sh xxx_defconfig
   or
   - ./build_linux.sh xxx.dtb
+-----------------------------------------
+
+---------- Generate ubifs Scritps -------
+checking scripts for default value
+correct them to related value the run
+
+$ ./gen_ubifs.sh
+$ ./gen_ubi.sh 
+-----------------------------------------
