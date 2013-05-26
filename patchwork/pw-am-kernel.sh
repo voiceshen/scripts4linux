@@ -3,7 +3,7 @@
 #
 #          FILE:  pw-am.sh
 # 
-#         USAGE:  ./pw-am.sh 
+#         USAGE:  ./pw-am-kernel.sh 
 # 
 #   DESCRIPTION:  fetch an 'mbox' patch from patchwork and git am it
 # 
@@ -30,7 +30,7 @@ set -o nounset                              # Treat unset variables as an error
 
 for patchnumber in $@;
 do
-	wget -nv https://patchwork.kernel.org/patch/$patchnumber/mbox/ -O pw-am-$patchnumber.patch
-	git am -s pw-am-$patchnumber.patch
-	rm pw-am-$patchnumber.patch
+	wget -nv https://patchwork.kernel.org/patch/$patchnumber/mbox/ -O pw-am-kernel-$patchnumber.patch
+	git am -s pw-am-kenrel-$patchnumber.patch
+	rm pw-am-kernel-$patchnumber.patch
 done
