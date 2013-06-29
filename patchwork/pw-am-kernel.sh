@@ -31,6 +31,6 @@ set -o nounset                              # Treat unset variables as an error
 for patchnumber in $@;
 do
 	wget -nv https://patchwork.kernel.org/patch/$patchnumber/mbox/ -O pw-am-kernel-$patchnumber.patch
-	git am -s pw-am-kenrel-$patchnumber.patch
+	git am -s pw-am-kernel-$patchnumber.patch
 	rm pw-am-kernel-$patchnumber.patch
 done
